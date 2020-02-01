@@ -151,7 +151,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &3889554234520008372
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -165,9 +165,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.029044848, y: -0.07264092}
   serializedVersion: 2
-  m_Radius: 0.0208458
+  m_Radius: 0.23146532
 --- !u!1 &8558386216290426227
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,4 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d10da96ec2ddc43ae8728486206720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repairRadius: 3
+  repairRadius: 1
+  repairScoreReward: 30
+  scoreManager: {fileID: 0}
