@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226695430803476562}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33, y: 0, z: -1.92}
-  m_LocalScale: {x: 0.006306586, y: 0.006306586, z: 0.006306586}
+  m_LocalRotation: {x: 0.05636605, y: -0, z: -0, w: 0.9984102}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.13627014, y: 0.13627014, z: 0.13627014}
   m_Children: []
   m_Father: {fileID: 8244815327334105295}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.4630003, y: 0, z: 0}
 --- !u!212 &6225904661412764301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea4bae6f2dc9c4a4a90ac298ae813510, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bc701db1e7ec4d43949c7a36c8b46ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,15 +107,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8244815327334105265}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.20952259, y: -0, z: -0, w: 0.9778038}
+  m_LocalPosition: {x: 0, y: -0.008, z: 3.9176998e-10}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 7045469951282087486}
   - {fileID: 5468144667517413554}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 24.189001, y: 0, z: 0}
 --- !u!114 &562772352872259211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,8 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6318098761e247f2ba987db1a107f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceUnit: 2
-  maxVelocity: 2
+  forceUnit: 6
+  maxVelocity: 12
   myRigidbody: {fileID: 55140577499352794}
 --- !u!50 &55140577499352794
 Rigidbody2D:
@@ -167,7 +167,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.0907462
+  m_Radius: 0.0208458
 --- !u!1 &8558386216290426227
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,4 +211,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d10da96ec2ddc43ae8728486206720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repairRadius: 0.5
+  repairRadius: 3
