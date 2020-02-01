@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Repair : MonoBehaviour
 {
     [SerializeField] private CircleCollider2D repairArea;
     void Update()
