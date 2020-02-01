@@ -13,7 +13,6 @@ public class ChunkGenerator : MonoBehaviour
     public Transform upperBound;
     public Transform lowerBound;
 
-
     private Transform lastSpawn;
     // Start is called before the first frame update
     void Start()
@@ -29,22 +28,25 @@ public class ChunkGenerator : MonoBehaviour
 
     void spawnChunk(int nflaws)
     {
-
         GameObject newChunk = Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
         lastSpawn = newChunk.GetComponent<Transform>();
+        //lastSpawn.GetComponent<TowerDespawn>().generatorRef = this;
 
         Bounds chunkBound = newChunk.GetComponent<SpriteRenderer>().bounds;
 
         float chunkHeight = upperBound.position.y - lowerBound.position.y;
         float chunkWidth = chunkBound.max.x - chunkBound.min.x;
 
-        float segSize = chunkHeight / nflaws;
-        for(int i=0;i<nflaws; i++)
+        if (nflaws > 0)
         {
-            float x = Random.Range(leftBound.position.x,rightBound.position.x); 
-            float y = Random.Range(lowerBound.position.y,lowerBound.position.y + segSize);
-            y+=i * segSize;
-            Instantiate(flaw,new Vector3(x,y,0),Quaternion.identity,lastSpawn); 
+            float segSize = chunkHeight / nflaws;
+            for(int i=0;i<nflaws; i++)
+            {
+                float x = Random.Range(leftBound.position.x,rightBound.position.x); 
+                float y = Random.Range(lowerBound.position.y,lowerBound.position.y + segSize);
+                y+=i * segSize;
+                Instantiate(flaw,new Vector3(x,y,0),Quaternion.identity,lastSpawn); 
+            }
         }
     }
 }
