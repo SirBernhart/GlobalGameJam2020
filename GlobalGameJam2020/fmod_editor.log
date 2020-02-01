@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B63118D078 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002B631193888 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -22,6 +22,7 @@
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
