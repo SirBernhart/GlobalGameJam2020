@@ -151,7 +151,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &3889554234520008372
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -212,5 +212,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repairRadius: 3
-  repairScoreReward: 20
+  repairScoreReward: 30
   scoreManager: {fileID: 0}
