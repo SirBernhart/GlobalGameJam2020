@@ -8,13 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float forceUnit;
     public float maxVelocity;
     public Rigidbody2D myRigidbody;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 resultingVector = new Vector3(0,0,0);
