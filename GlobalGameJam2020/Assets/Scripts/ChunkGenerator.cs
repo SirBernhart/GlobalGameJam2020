@@ -7,17 +7,17 @@ public class ChunkGenerator : MonoBehaviour
     public Transform  parentTransform;
     public int flawsPerSpawn;
     public GameObject chunk;
-    public GameObject flaw;
-    public Transform leftBound;
-    public Transform rightBound;
-    public Transform upperBound;
-    public Transform lowerBound;
+    public GameObject[] towerPieces;
+    //public GameObject flaw;
+    //public Transform leftBound;
+    //public Transform rightBound;
+    //public Transform upperBound;
+    //public Transform lowerBound;
 
-    private Transform lastSpawn;
     // Start is called before the first frame update
     void Start()
     {
-        spawnChunk(3);
+        spawnChunk();
     }
 
     // Update is called once per frame
@@ -26,11 +26,19 @@ public class ChunkGenerator : MonoBehaviour
         
     }
 
-    void spawnChunk(int nflaws)
+    void spawnChunk()
     {
-        GameObject newChunk = Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
-        lastSpawn = newChunk.GetComponent<Transform>();
-        //lastSpawn.GetComponent<TowerDespawn>().generatorRef = this;
+        Debug.Log("Spawn");
+        GameObject newChunk = (GameObject)Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
+        if(newChunk != null)
+        {
+            newChunk.GetComponent<TowerDespawn>().generatorRef = this;
+            newChunk.GetComponent<DamageSpawner>().difficulty = 1;
+        }
+        /*
+        Transform lastSpawn = newChunk.GetComponent<Transform>();
+
+
 
         Bounds chunkBound = newChunk.GetComponent<SpriteRenderer>().bounds;
 
@@ -48,5 +56,11 @@ public class ChunkGenerator : MonoBehaviour
                 Instantiate(flaw,new Vector3(x,y,0),Quaternion.identity,lastSpawn); 
             }
         }
+        */
+    }
+
+    public void nextSpawn()
+    {
+        spawnChunk();
     }
 }
