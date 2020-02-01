@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class RepairController : MonoBehaviour
 {
-    [SerializeField] private CircleCollider2D repairArea;
+    [SerializeField] private float repairRadius;
     void Update()
     {
         if (Input.GetButtonDown("Repair"))
@@ -14,19 +15,15 @@ using UnityEngine;
 
     private void DoRepair()
     {
-        if(repairArea.enabled == false)
+        List<Collider2D> collidedWith = new List<Collider2D>();
+        Physics2D.OverlapCircle(transform.position, repairRadius, new ContactFilter2D(), collidedWith);
+
+        foreach(Collider2D collider in collidedWith)
         {
-            Debug.Log("Repairing");
-            repairArea.enabled = true;
-            StartCoroutine(TimeToDisableCollider(1f));
+            if(collider.tag == "damage")
+            {
+                collider.gameObject.GetComponent<Damage>().ReduceDamage(1);
+            }
         }
     }
-
-    private IEnumerator TimeToDisableCollider(float timeToWait)
-    {
-        yield return new WaitForSeconds(timeToWait);
-        repairArea.enabled = false;
-    }
-
-
 }
