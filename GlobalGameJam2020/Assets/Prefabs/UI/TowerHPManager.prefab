@@ -161,7 +161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerHP: 100
   maxTowerHP: 100
-  HPToReduce: 0
+  HPToReduce: 25
+  HPToReduceOverTime: 2
+  HPToIncrease: 10
   healthBar: {fileID: 8913406997817222886}
 --- !u!1 &8913406997817222884
 GameObject:
