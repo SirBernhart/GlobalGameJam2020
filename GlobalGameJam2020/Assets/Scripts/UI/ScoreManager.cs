@@ -14,7 +14,7 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
-    public void IncreaseScore(int amount, int hpAmount)
+    public void IncreaseScore(int amount, float hpAmount)
     {
         if(hpAmount <= 80)
         {
