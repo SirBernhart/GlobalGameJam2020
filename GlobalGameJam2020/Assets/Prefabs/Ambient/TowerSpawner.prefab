@@ -110,11 +110,8 @@ MonoBehaviour:
   parentTransform: {fileID: 2042414469535784447}
   flawsPerSpawn: 3
   chunk: {fileID: 2929129186905900289, guid: 46de71890619ae74b91313f9bad63746, type: 3}
-  flaw: {fileID: 5611864583269557389, guid: d394ed20d124380439b2ecb482d5e467, type: 3}
-  leftBound: {fileID: 429917351838449119}
-  rightBound: {fileID: 1460568786227832720}
-  upperBound: {fileID: 5211951339889691702}
-  lowerBound: {fileID: 2527473246943167638}
+  towerPieces:
+  - {fileID: 2929129186905900289, guid: 46de71890619ae74b91313f9bad63746, type: 3}
 --- !u!1 &6800998504961205565
 GameObject:
   m_ObjectHideFlags: 0
