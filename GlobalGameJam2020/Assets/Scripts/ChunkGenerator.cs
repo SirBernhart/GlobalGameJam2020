@@ -7,13 +7,17 @@ public class ChunkGenerator : MonoBehaviour
     public Transform  parentTransform;
     public int flawsPerSpawn;
     public GameObject chunk;
-    public SpriteRenderer chunkRenderer;
     public GameObject flaw;
-    public SpriteRenderer flawRenderer;
+    public Transform leftBound;
+    public Transform rightBound;
+    public Transform upperBound;
+    public Transform lowerBound;
+
+    private Transform lastSpawn;
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnChunk(3);
     }
 
     // Update is called once per frame
@@ -24,15 +28,25 @@ public class ChunkGenerator : MonoBehaviour
 
     void spawnChunk(int nflaws)
     {
+        GameObject newChunk = Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
+        lastSpawn = newChunk.GetComponent<Transform>();
+        //lastSpawn.GetComponent<TowerDespawn>().generatorRef = this;
 
-        Instantiate(chunk,parentTransform);
-        Bounds chunkBounds = chunkRenderer.bounds;
-        Bounds flawBounds = flawRenderer.bounds;
-        for(int i=0;i<nflaws; i++)
+        Bounds chunkBound = newChunk.GetComponent<SpriteRenderer>().bounds;
+
+        float chunkHeight = upperBound.position.y - lowerBound.position.y;
+        float chunkWidth = chunkBound.max.x - chunkBound.min.x;
+
+        if (nflaws > 0)
         {
-            float x = Random.Range(chunkBounds.min.x + flawBounds.center.x, chunkBounds.max.x - flawBounds.center.x); 
-            float y = Random.Range(chunkBounds.min.y + flawBounds.center.y, chunkBounds.max.y - flawBounds.center.y);
-            Instantiate(flaw,new Vector3(x,y,0),Quaternion.identity,parentTransform); 
+            float segSize = chunkHeight / nflaws;
+            for(int i=0;i<nflaws; i++)
+            {
+                float x = Random.Range(leftBound.position.x,rightBound.position.x); 
+                float y = Random.Range(lowerBound.position.y,lowerBound.position.y + segSize);
+                y+=i * segSize;
+                Instantiate(flaw,new Vector3(x,y,0),Quaternion.identity,lastSpawn); 
+            }
         }
     }
 }
