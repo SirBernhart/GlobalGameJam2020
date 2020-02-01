@@ -10,21 +10,9 @@ public class ChunkGenerator : MonoBehaviour
     public SpriteRenderer chunkRenderer;
     public GameObject flaw;
     public SpriteRenderer flawRenderer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void spawnChunk(int nflaws)
     {
-
         Instantiate(chunk,parentTransform);
         Bounds chunkBounds = chunkRenderer.bounds;
         Bounds flawBounds = flawRenderer.bounds;
