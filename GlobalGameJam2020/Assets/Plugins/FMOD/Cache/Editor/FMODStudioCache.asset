@@ -14,11 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637161455790000000
+  lastModified: 637161461170000000
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 838
+  Exists: 1
+--- !u!114 &-5138853046184053762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637161461170000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1201217967098858120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.assets.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Build/Desktop/Master.assets.bank
+  SubDir: 
+  lastModified: 637161461170000000
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -34,17 +70,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -6693846883795047362}
-  - {fileID: 6871252728430710836}
-  - {fileID: 2847663133616867278}
+  - {fileID: -1201217967098858120}
+  - {fileID: -5138853046184053762}
   EditorEvents:
   - {fileID: 671681305144219404}
   - {fileID: 4722836796062639840}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2847663133616867278}
+  - {fileID: -5138853046184053762}
   StringsBanks:
   - {fileID: -6693846883795047362}
-  stringsBankWriteTime: 637161455790000000
+  stringsBankWriteTime: 637161461170000000
   cacheVersion: 3
 --- !u!114 &671681305144219404
 MonoBehaviour:
@@ -61,7 +97,7 @@ MonoBehaviour:
   Path: event:/Testes/Teste
   guid: 11468394f05e3c4383ae2d20fc04e430
   Banks:
-  - {fileID: 2847663133616867278}
+  - {fileID: -5138853046184053762}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -102,7 +138,7 @@ MonoBehaviour:
   Path: event:/SFXs/Atac
   guid: 77c7bd9aa3b62f42a3cb2a22405e34d3
   Banks:
-  - {fileID: 2847663133616867278}
+  - {fileID: -5138853046184053762}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
