@@ -211,6 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d10da96ec2ddc43ae8728486206720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repairRadius: 3
+  repairRadius: 1
   repairScoreReward: 30
   scoreManager: {fileID: 0}
