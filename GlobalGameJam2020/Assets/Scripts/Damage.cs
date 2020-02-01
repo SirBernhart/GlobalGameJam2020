@@ -6,16 +6,19 @@ public class Damage : MonoBehaviour
 {
     private int damageLevel;
 
-    public void ReduceDamage(int howMuch)
+    public bool ReduceDamage(int howMuch)
     {
         if(--damageLevel <= 0)
         {
-            FinishRepairs();
+            StartCoroutine(FinishRepairs());
+            return true;
         }
+        return false;
     }
 
-    private void FinishRepairs()
+    private IEnumerator FinishRepairs()
     {
+        yield return new WaitForEndOfFrame();
         Destroy(gameObject);
     }
 }
