@@ -298,6 +298,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 808974433}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &487548438 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8269709182575023635, guid: bacd13882a396e042aac203bcc98915f,
+    type: 3}
+  m_PrefabInstance: {fileID: 55892293}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01ccb17078609d469f4876f17860cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &623190570 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8913406997523698279, guid: 1e346acbb175fe04a92f8da8275639cf,
@@ -606,7 +618,12 @@ PrefabInstance:
         type: 3}
       propertyPath: scoreManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 487548438}
+    - target: {fileID: 2416064058326588529, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: towerHP
+      value: 
+      objectReference: {fileID: 623190571}
     - target: {fileID: 5468144667517413554, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_LocalPosition.x
