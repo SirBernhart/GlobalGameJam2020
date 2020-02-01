@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Repair : MonoBehaviour
+public class RepairController : MonoBehaviour
 {
+    [SerializeField] private CircleCollider2D repairArea;
     void Update()
     {
         if (Input.GetButtonDown("Repair"))
@@ -14,8 +15,20 @@ public class Repair : MonoBehaviour
 
     private void DoRepair()
     {
-        Debug.Log("Repairing");
+        if(repairArea.enabled == false)
+        {
+            Debug.Log("Repairing");
+            repairArea.enabled = true;
+            StartCoroutine(TimeToDisableCollider(1f));
+        }
     }
+
+    private IEnumerator TimeToDisableCollider(float timeToWait)
+    {
+        yield return new WaitForSeconds(timeToWait);
+        repairArea.enabled = false;
+    }
+
 
 
 }
