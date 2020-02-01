@@ -6,7 +6,7 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7fb0fe305a08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7f8961eec608 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,98 +20,8 @@
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {00bbe855-bb16-4877-933b-4efef252a4c7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {57204646-8c6d-49fb-b165-7181da55acc7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e23fd0f4-2ebe-4819-867d-1f0478c0b15a}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ff2bd763-f39b-461b-ba81-5e77c7a04346}
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {00bbe855-bb16-4877-933b-4efef252a4c7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {57204646-8c6d-49fb-b165-7181da55acc7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e23fd0f4-2ebe-4819-867d-1f0478c0b15a}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ff2bd763-f39b-461b-ba81-5e77c7a04346}
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {00bbe855-bb16-4877-933b-4efef252a4c7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {57204646-8c6d-49fb-b165-7181da55acc7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e23fd0f4-2ebe-4819-867d-1f0478c0b15a}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ff2bd763-f39b-461b-ba81-5e77c7a04346}
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {00bbe855-bb16-4877-933b-4efef252a4c7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e9059c61-b86a-416a-9b97-4efaa4aeac3c}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {57204646-8c6d-49fb-b165-7181da55acc7}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {86c16f41-032c-4e20-b5c4-6eedaf6e337b}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {e23fd0f4-2ebe-4819-867d-1f0478c0b15a}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ada4484a-c53c-4577-9f4c-73fa349c018f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ff2bd763-f39b-461b-ba81-5e77c7a04346}
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
-[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {d4e85373-e3f9-4bb2-a100-2308ac002fc0}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {d8a2abb9-e571-4dab-bc13-a6cf933c00cd}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {00bbe855-bb16-4877-933b-4efef252a4c7}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ff2bd763-f39b-461b-ba81-5e77c7a04346}
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
