@@ -212,3 +212,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repairRadius: 0.5
+  repairScoreReward: 10
+  scoreManager: {fileID: 0}
