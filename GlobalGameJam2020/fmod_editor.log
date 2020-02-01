@@ -21,3 +21,10 @@
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
