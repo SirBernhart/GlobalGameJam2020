@@ -90,6 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8244815327334105295}
+  - component: {fileID: 562772352872259211}
   - component: {fileID: 55140577499352794}
   m_Layer: 0
   m_Name: Player
@@ -114,6 +115,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562772352872259211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8244815327334105265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6318098761e247f2ba987db1a107f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceUnit: 6
+  maxVelocity: 2
+  myRigidbody: {fileID: 55140577499352794}
 --- !u!50 &55140577499352794
 Rigidbody2D:
   serializedVersion: 4
@@ -127,7 +143,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -178,4 +194,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d10da96ec2ddc43ae8728486206720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repairRadius: 3
+  repairRadius: 1
