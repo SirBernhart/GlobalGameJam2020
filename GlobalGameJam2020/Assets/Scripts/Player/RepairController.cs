@@ -5,6 +5,9 @@ using UnityEngine;
 public class RepairController : MonoBehaviour
 {
     [SerializeField] private float repairRadius;
+    [SerializeField] private int repairScoreReward;
+    [SerializeField] private ScoreManager scoreManager;
+
     private int repairAmount = 1;
 
     void Update()
@@ -24,7 +27,10 @@ public class RepairController : MonoBehaviour
         {
             if(collider.tag == "damage")
             {
-                collider.gameObject.GetComponent<Damage>().ReduceDamage(repairAmount);
+                if (collider.gameObject.GetComponent<Damage>().ReduceDamage(repairAmount))
+                {
+                    scoreManager.IncreaseScore(repairScoreReward, 79);
+                }
             }
         }
     }
