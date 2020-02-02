@@ -12,12 +12,6 @@ public class TowerHPManager : MonoBehaviour
     public float HPToReduceOverTime;
     public float HPToIncrease;
 
-    private Coroutine decreaseHPCoroutine;
-    private void Start()
-    {
-        //decreaseHPCoroutine = StartCoroutine(DecreaseHPOverTime());
-    }
-
     [SerializeField] private Image healthBar;
 
     public void Increase()
@@ -28,30 +22,13 @@ public class TowerHPManager : MonoBehaviour
         UpdateHealthBar();
     }
 
-    public void Reduce(float damage = 0)
+    public void Reduce()
     {
-        if(damage != 0)
-        {
-            towerHP -= damage;
-        }
-        else
-        {
-            towerHP -= HPToReduce;
-        }
+        towerHP -= HPToReduce;
         UpdateHealthBar();
         if(towerHP <= 0)
         {
             EndGame();
-        }
-    }
-
-    private IEnumerator DecreaseHPOverTime()
-    {
-        WaitForSeconds timeBetweenDamage = new WaitForSeconds(1f);
-        while (true)
-        {
-            yield return timeBetweenDamage;
-            Reduce(HPToReduceOverTime);
         }
     }
 
