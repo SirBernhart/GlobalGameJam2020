@@ -10,6 +10,7 @@ public class RepairController : MonoBehaviour
     [SerializeField] private TowerHPManager towerHP;
 
     private int repairAmount = 1;
+    public AudioSource Boom;
 
     void Update()
     {
@@ -28,6 +29,7 @@ public class RepairController : MonoBehaviour
         {
             if(collider.tag == "damage")
             {
+                Boom.Play();
                 // ReduceDamage returns true if the player was able to repair it
                 if (collider.gameObject.GetComponent<Damage>().ReduceDamage(repairAmount))
                 {
