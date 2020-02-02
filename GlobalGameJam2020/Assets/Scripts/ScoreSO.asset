@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ScoreSO
   m_EditorClassIdentifier: 
   score: 0
-  floor: 0
+  floor: 1

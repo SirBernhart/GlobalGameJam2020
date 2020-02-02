@@ -1751,6 +1751,12 @@ PrefabInstance:
       propertyPath: towerHP
       value: 
       objectReference: {fileID: 623190571}
+    - target: {fileID: 2416064058326588529, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: Score
+      value: 
+      objectReference: {fileID: 11400000, guid: 176bb21bf835e4ba7b7f243b020c87c6,
+        type: 2}
     - target: {fileID: 5308934900018874377, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_Volume
