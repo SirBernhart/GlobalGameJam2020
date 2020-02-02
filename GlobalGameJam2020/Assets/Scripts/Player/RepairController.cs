@@ -8,7 +8,9 @@ public class RepairController : MonoBehaviour
     [SerializeField] private int repairScoreReward;
     [SerializeField] private ScoreManager scoreManager;
     [SerializeField] private TowerHPManager towerHP;
+    [SerializeField] private Transform canonTip;
     public ScoreSO Score;
+    public ScreenShake screenShake;
 
     private int repairAmount = 1;
     public AudioSource Boom;
@@ -29,7 +31,7 @@ public class RepairController : MonoBehaviour
     private void DoRepair()
     {
         List<Collider2D> collidedWith = new List<Collider2D>();
-        Physics2D.OverlapCircle(transform.position, repairRadius, new ContactFilter2D(), collidedWith);
+        Physics2D.OverlapCircle(canonTip.position, repairRadius, new ContactFilter2D(), collidedWith);
 
         foreach(Collider2D collider in collidedWith)
         {
@@ -40,6 +42,7 @@ public class RepairController : MonoBehaviour
                 // ReduceDamage returns true if the player was able to repair it
                 if (collider.gameObject.GetComponent<Damage>().ReduceDamage(repairAmount))
                 {
+                    screenShake.Shake();
                     towerHP.Increase();
                     scoreManager.IncreaseScore(repairScoreReward, towerHP.towerHP);
                     Score.score = scoreManager.score;

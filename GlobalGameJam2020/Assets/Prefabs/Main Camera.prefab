@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2475740976640702739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807277006044636656}
+  - component: {fileID: 1355258961988108083}
+  m_Layer: 0
+  m_Name: Camera shake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &807277006044636656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475740976640702739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8845625995909335952}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1355258961988108083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2475740976640702739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2889f6b7849b8ce47be28e87819eeb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 8845625995909335952}
+  shakeDuration: 0.3
+  shakeAmount: 0.05
+  decreaseFactor: 1
 --- !u!1 &3731968063588011375
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +287,7 @@ GameObject:
   - component: {fileID: 8845625995909335959}
   - component: {fileID: 8845625995909335958}
   - component: {fileID: 800912575}
+  - component: {fileID: 7845830681295377588}
   - component: {fileID: 800912576}
   m_Layer: 0
   m_Name: Main Camera
@@ -263,6 +311,7 @@ Transform:
   - {fileID: 57097696752660391}
   - {fileID: 722538873404362512}
   - {fileID: 4042160756218011968}
+  - {fileID: 807277006044636656}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -351,6 +400,22 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7845830681295377588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8845625995909335957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2889f6b7849b8ce47be28e87819eeb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 8845625995909335952}
+  shakeDuration: 0.3
+  shakeAmount: 0.05
+  decreaseFactor: 1
 --- !u!114 &800912576
 MonoBehaviour:
   m_ObjectHideFlags: 0

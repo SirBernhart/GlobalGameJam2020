@@ -109,8 +109,15 @@ public class DifficultyManager : MonoBehaviour
             velocidade = frameSize / 2.5f;
             return;
         }
-        dificuldade = 7;
-        velocidade = frameSize / 2f;
+        dificuldade = 2 + (nChunks / 10);
+        if((2f - (nChunks * 0.1 / 10) > 0))
+        {
+            velocidade = frameSize / (2f - (nChunks * 0.1f / 10.0f));
+        }
+        else
+        {
+            velocidade = frameSize / 0.01f;
+        }
         return;
     }
 }
