@@ -9,9 +9,22 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private int highHPMultiplier;
     private int score;
 
+    private FMOD.Studio.EventInstance instance;
+
+    [FMODUnity.EventRef]
+    public string fmodEvent;
+
+    [SerializeField] [Range(0, 25)]
+    private float MusicVar;
+
+
+
     private void Start()
     {
         scoreText.text = score.ToString();
+        instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
+        instance.start();
+
     }
 
     public void IncreaseScore(int amount, float hpAmount)
@@ -19,6 +32,9 @@ public class ScoreManager : MonoBehaviour
         if(hpAmount <= 80)
         {
             score += amount;
+            instance.setParameterByName("EndGame", MusicVar);
+
+
         }
         else
         {

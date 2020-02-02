@@ -3,10 +3,10 @@
 [LOG] SystemI::init                            : Initialize version=20007 (107206), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
 [LOG] OutputCoreAudio::init                    : Output running 2 channels at 48000Hz sample rate.
-[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7f8963542c08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7fdc5c904808 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,8 +20,10 @@
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {4508957c-da5d-4984-8f8c-e72f06d9d17f}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {0f34f64a-ac8e-4298-a25a-f133d343c5db}
+[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1685625d-e858-4942-94fe-85f0af45e094}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {d4e85373-e3f9-4bb2-a100-2308ac002fc0}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {d8a2abb9-e571-4dab-bc13-a6cf933c00cd}
+[WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {63c75a27-3db7-498b-8779-15b728a3ba03}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {1657e415-2b8d-434b-b9ef-6b4c9be93dec}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {00bbe855-bb16-4877-933b-4efef252a4c7}
 [WRN] ObjectLookup::get                        : Lookup failed for WaveformResourceModel: {ff2bd763-f39b-461b-ba81-5e77c7a04346}
