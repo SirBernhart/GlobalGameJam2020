@@ -1792,6 +1792,11 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 131510232795882826, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 562772352872259211, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: forceUnit
@@ -1853,6 +1858,17 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 1dd31935d630249aa9a9c2a42bc8a26a, type: 3}
+    - target: {fileID: 5308934900018874377, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 81de4502439fb492386003da4220d7fc,
+        type: 2}
+    - target: {fileID: 6182511023748453895, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7609702207891926178, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: ColorBySpeedModule.enabled
