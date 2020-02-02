@@ -10115,40 +10115,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8845625995794458340}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &800912575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800912571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &800912576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11369,6 +11335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8845625995909335957, guid: 92ab0b5352dba05469cb9f0a439e3375,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8845625995909335959, guid: 92ab0b5352dba05469cb9f0a439e3375,
         type: 3}
       propertyPath: m_ClearFlags
@@ -11388,6 +11359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845625995909335959, guid: 92ab0b5352dba05469cb9f0a439e3375,
+        type: 3}
+      propertyPath: field of view
+      value: 94
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8845625995909335953, guid: 92ab0b5352dba05469cb9f0a439e3375, type: 3}
