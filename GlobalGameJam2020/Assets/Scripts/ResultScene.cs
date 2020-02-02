@@ -8,8 +8,9 @@ public class ResultScene: MonoBehaviour
     public TextMeshProUGUI field;
     public int targetScore;
     public int currentDisplayScore = 0;
- 
- 
+    
+    
+
     void Start()
     {
         StartCoroutine(CountUpToTarget());
