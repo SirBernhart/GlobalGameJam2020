@@ -40,16 +40,16 @@ public class DifficultyManager : MonoBehaviour
         }
         if(nChunks <= 26)
         {
-            dificuldade = 4;
+            dificuldade = 3;
             velocidade = frameSize / 4.5f;
             return;
         }
         if(nChunks <= 51)
         {
-            dificuldade = 4;
+            dificuldade = 3;
             velocidade = frameSize / 4;
         }
-        dificuldade = 5;
+        dificuldade = 3;
         velocidade = frameSize / 3;
         return;
         
