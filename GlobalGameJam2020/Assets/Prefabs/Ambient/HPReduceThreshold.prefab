@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f65bc7ddddee024295f78052292e456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageSound: {fileID: 5431826982021061926, guid: c425598b4dfdd44b4aa0303ba4a1a6b7,
+    type: 3}
   towerHP: {fileID: 0}
 --- !u!61 &4345405532256232819
 BoxCollider2D:
