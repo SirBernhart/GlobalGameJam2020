@@ -8,6 +8,7 @@ public class RepairController : MonoBehaviour
     [SerializeField] private int repairScoreReward;
     [SerializeField] private ScoreManager scoreManager;
     [SerializeField] private TowerHPManager towerHP;
+    public ScoreSO Score;
 
     private int repairAmount = 1;
     public AudioSource Boom;
@@ -35,6 +36,7 @@ public class RepairController : MonoBehaviour
                 {
                     towerHP.Increase();
                     scoreManager.IncreaseScore(repairScoreReward, towerHP.towerHP);
+                    Score.score = scoreManager.score;
                 }
             }
         }
