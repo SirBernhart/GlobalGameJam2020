@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class ScreenScroll : MonoBehaviour
 {
-    private float delta;
-    private void Start()
-    {
-        delta = Time.deltaTime;
-    }
-
     void Update()
     {
-        float moveSpeed = DifficultyManager.velocidade * delta;
+        float moveSpeed = DifficultyManager.velocidade * Time.deltaTime;
         transform.position = transform.position + new Vector3(0, -moveSpeed, 0);
     }
 }
