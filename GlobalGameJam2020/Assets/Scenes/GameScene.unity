@@ -685,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 4302737835085841447, guid: f75d65e0d09b0409db71f897641e052c,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: -12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f75d65e0d09b0409db71f897641e052c, type: 3}
@@ -1751,6 +1751,12 @@ PrefabInstance:
       propertyPath: towerHP
       value: 
       objectReference: {fileID: 623190571}
+    - target: {fileID: 2416064058326588529, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: Score
+      value: 
+      objectReference: {fileID: 11400000, guid: 176bb21bf835e4ba7b7f243b020c87c6,
+        type: 2}
     - target: {fileID: 5308934900018874377, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_Volume
@@ -1890,6 +1896,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244815327334105295, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244815327334105295, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a707e6290dc51a4eb590a4fa77e6d67, type: 3}

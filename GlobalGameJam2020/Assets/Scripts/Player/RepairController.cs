@@ -13,6 +13,11 @@ public class RepairController : MonoBehaviour
     private int repairAmount = 1;
     public AudioSource Boom;
 
+    void Start()
+    {
+        Score.score = 0;
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Repair"))
