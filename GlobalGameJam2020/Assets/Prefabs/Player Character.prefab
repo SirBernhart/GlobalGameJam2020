@@ -9661,6 +9661,7 @@ MonoBehaviour:
   forceUnit: 45
   maxVelocity: 40
   myRigidbody: {fileID: 55140577499352794}
+  playerGraphics: {fileID: 5468144667517413554}
 --- !u!50 &55140577499352794
 Rigidbody2D:
   serializedVersion: 4
