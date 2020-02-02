@@ -41,7 +41,7 @@ public class ChunkGenerator : MonoBehaviour
         }
         else
         {
-            spawnChunk(towerPieces[Random.Range(1,towerPieces.Length)]);
+            spawnChunk(towerPieces[Random.Range(2,towerPieces.Length)]);
         }
     }
 }
