@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HPReduceThreshold : MonoBehaviour
 {
-        public GameObject DamageSound;
+        public AudioSource DamageSound;
 
     [SerializeField] private TowerHPManager towerHP;
 
@@ -12,6 +12,7 @@ public class HPReduceThreshold : MonoBehaviour
     {
         if(collision.gameObject.tag == "damage")
         {
+            DamageSound.Play();
             Instantiate(DamageSound, this.transform);
             towerHP.Reduce();
         }

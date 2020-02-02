@@ -12,12 +12,6 @@ public class TowerDespawn : MonoBehaviour
         Debug.Log(this.gameObject.GetComponent<SpriteRenderer>().sprite.bounds);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         //print(other.name);
@@ -26,7 +20,7 @@ public class TowerDespawn : MonoBehaviour
         {
             generatorRef.nextSpawn();
         }
-        if(tag == "towerDespawn")
+        if(tag == "towerDespawn" && this.gameObject.name != "Tower base(Clone)")
         {
             print("Destroy");
             Destroy(this.gameObject);

@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float forceUnit;
     public float maxVelocity;
     public Rigidbody2D myRigidbody;
+    [SerializeField] private Transform playerGraphics;
 
     void Update()
     {
@@ -26,10 +27,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxis("Horizontal")>0)
         {
             resultingVector+=(forceUnit*right);
+            if(transform.rotation.y != 1)
+            {
+                transform.Rotate(Vector2.up, 180);
+            }
         }
         if (Input.GetAxis("Horizontal")<0)
         {
             resultingVector+=(-1*forceUnit*right);
+            if (transform.rotation.y != 0)
+            {
+                transform.Rotate(Vector2.up, -180);
+            }
         }
       
         myRigidbody.AddForce(resultingVector);

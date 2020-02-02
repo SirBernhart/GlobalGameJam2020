@@ -5,7 +5,6 @@ using UnityEngine;
 public class Damage : MonoBehaviour
 {
     private int damageLevel;
-
     public bool ReduceDamage(int howMuch)
     {
         if(--damageLevel <= 0)
