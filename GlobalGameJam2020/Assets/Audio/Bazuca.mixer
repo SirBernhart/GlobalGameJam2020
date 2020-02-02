@@ -35,7 +35,7 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Bazuca
-  m_OutputGroup: {fileID: 0}
+  m_OutputGroup: {fileID: 24300002, guid: a5c8ba656325b4ffaa4d760e038a5930, type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
@@ -97,7 +97,7 @@ AudioMixerSnapshotController:
   m_FloatValues:
     4efb2481e42f64148afd5c7e66accf85: 208
     9178020345a4848aabb5a2d9bc3ca705: -0
-    d0eb02977c5df40daaaba8164af59929: 13.341326
+    d0eb02977c5df40daaaba8164af59929: 6.648677
     1ced89ad1259146dd82c1f23ade10f09: -36.6
     9a10b4ed8b5c24b44a9ebb2e22aceb73: 10
   m_TransitionOverrides: {}
