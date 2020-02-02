@@ -27,77 +27,77 @@ public class DifficultyManager : MonoBehaviour
         floorCounter.text = nChunks.ToString();
 
         // Intro
-        if (nChunks <= 4)
+        if (nChunks <= 3)
         {
             dificuldade = 1;
-            velocidade = frameSize / 6;
+            velocidade = frameSize / 5;
             return;
         }
-        if (nChunks <= 9)
+        if (nChunks <= 5)
         {
             dificuldade = 2;
             velocidade = frameSize / 5;
             return;
         }
         // Fácil
-        if (nChunks <= 13)
+        if (nChunks <= 7)
         {
             dificuldade = 3;
             velocidade = frameSize / 5;
             return;
         }
-        if (nChunks <= 17)
+        if (nChunks <= 9)
         {
             dificuldade = 3;
             velocidade = frameSize / 4.5f;
             return;
         }
-        if (nChunks <= 20)
+        if (nChunks <= 11)
         {
             dificuldade = 4;
             velocidade = frameSize / 4.5f;
             return;
         }
-        if (nChunks <= 23)
+        if (nChunks <= 13)
         {
             dificuldade = 4;
             velocidade = frameSize / 4;
             return;
         }
-        if (nChunks <= 26)
+        if (nChunks <= 15)
         {
             dificuldade = 5;
             velocidade = frameSize / 4;
             return;
         }
         // Médio
-        if (nChunks <= 31)
+        if (nChunks <= 18)
         {
             dificuldade = 5;
             velocidade = frameSize / 3.5f;
             return;
         }
-        if (nChunks <= 36)
+        if (nChunks <= 21)
         {
             dificuldade = 6;
             velocidade = frameSize / 3.5f;
             return;
         }
         // Difícil
-        if (nChunks <= 43)
+        if (nChunks <= 25)
         {
             dificuldade = 6;
             velocidade = frameSize / 3f;
             return;
         }
-        if (nChunks <= 50)
+        if (nChunks <= 30)
         {
             dificuldade = 7;
             velocidade = frameSize / 3f;
             return;
         }
         // Duro de matar / Inferno / Elite / Somente os brabo
-        if (nChunks <= 57)
+        if (nChunks <= 35)
         {
             dificuldade = 7;
             velocidade = frameSize / 2.5f;
