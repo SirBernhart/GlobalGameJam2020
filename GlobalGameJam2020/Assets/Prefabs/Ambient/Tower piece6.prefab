@@ -94,8 +94,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 924034657
+  m_SortingLayer: 2
   m_SortingOrder: -12
   m_Sprite: {fileID: 21300000, guid: 0c83bbeb11e0e094eb51555c680e5da0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -313,6 +313,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 8f6b490099fd83443ab7e4347075fe90,
         type: 3}
+    - target: {fileID: 5611864583269557390, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1378312209
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611864583269557390, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557391, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -471,6 +481,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: ab90ee0b52899c240a4b58c731326a2b,
         type: 3}
+    - target: {fileID: 5611864583269557390, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1378312209
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611864583269557390, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557391, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -629,6 +649,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3d61f80625c45ad43b99f2092fe35eed,
         type: 3}
+    - target: {fileID: 5611864583269557390, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1378312209
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611864583269557390, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557391, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_LocalPosition.x
