@@ -214,3 +214,4 @@ MonoBehaviour:
   repairRadius: 1
   repairScoreReward: 30
   scoreManager: {fileID: 0}
+  towerHP: {fileID: 0}
