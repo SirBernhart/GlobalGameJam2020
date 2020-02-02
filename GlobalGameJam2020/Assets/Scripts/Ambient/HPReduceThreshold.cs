@@ -5,7 +5,6 @@ using UnityEngine;
 public class HPReduceThreshold : MonoBehaviour
 {
     public AudioSource DamageSound;
-    public Animator CameraShake;
     [SerializeField] private TowerHPManager towerHP;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,9 +12,7 @@ public class HPReduceThreshold : MonoBehaviour
         if(collision.gameObject.tag == "damage")
         {
             DamageSound.Play();
-            //Instantiate(DamageSound, this.transform);
             towerHP.Reduce();
-            CameraShake.SetTrigger("Shake");
         }
     }
 }
