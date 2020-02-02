@@ -34,7 +34,6 @@ GameObject:
   - component: {fileID: 8364172497296930664}
   - component: {fileID: 5634290900193075946}
   - component: {fileID: 1710411581947297499}
-  - component: {fileID: 8966354092796273011}
   m_Layer: 8
   m_Name: Tower piece7
   m_TagString: Untagged
@@ -197,29 +196,6 @@ MonoBehaviour:
   - {fileID: 2457867611132037594}
   - {fileID: 5980601437524366225}
   - {fileID: 6629578859875487318}
---- !u!114 &8966354092796273011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2929129186905900289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/SFXs/Bazuca
-  PlayEvent: 2
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!95 &8332852215541617783
 Animator:
   serializedVersion: 3
@@ -265,6 +241,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2929129186905900302}
     m_Modifications:
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 26c728be843314ab8bea842ace9ad7fb, type: 3}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: e8dcf5e382b99459e8a658f95ada19d9,
+        type: 2}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557388, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -412,6 +404,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2929129186905900302}
     m_Modifications:
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ed6f7238b5ff4b978dffaf25db903ee, type: 3}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: e8dcf5e382b99459e8a658f95ada19d9,
+        type: 2}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557388, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -559,6 +567,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2929129186905900302}
     m_Modifications:
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 26c728be843314ab8bea842ace9ad7fb, type: 3}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: e8dcf5e382b99459e8a658f95ada19d9,
+        type: 2}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557388, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
