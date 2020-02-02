@@ -14,11 +14,11 @@ public class ResultScene: MonoBehaviour
 
     void Start()
     {
-
-        StartCoroutine(CountUpToTarget());
+        field.text = result.floor.ToString() + " floors repaired! \n" + result.score.ToString() + " points collected! \n";
+        //StartCoroutine(CountUpToTarget());
     }
  
-    IEnumerator CountUpToTarget()
+    /*IEnumerator CountUpToTarget()
     {
         while ((currentDisplayScore < result.score) && (currentDisplayFloor < result.floor))
         {
@@ -32,6 +32,7 @@ public class ResultScene: MonoBehaviour
         }
         
     }
+    */
  
 }
  
