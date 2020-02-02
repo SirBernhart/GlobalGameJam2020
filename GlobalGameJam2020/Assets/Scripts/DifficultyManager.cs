@@ -27,6 +27,12 @@ public class DifficultyManager : MonoBehaviour
         floorCounter.text = nChunks.ToString();
 
         // Intro
+        if (nChunks == 1)
+        {
+            dificuldade = 0;
+            velocidade = frameSize / 7;
+            return;
+        }
         if (nChunks <= 3)
         {
             dificuldade = 1;
