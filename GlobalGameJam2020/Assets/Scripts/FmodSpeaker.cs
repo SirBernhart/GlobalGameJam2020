@@ -19,6 +19,6 @@ public class FmodSpeaker : MonoBehaviour
 
     void PlaySound(string Path)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Path, this.transform.position);
+        //FMODUnity.RuntimeManager.PlayOneShot(Path, this.transform.position);
     }
 }

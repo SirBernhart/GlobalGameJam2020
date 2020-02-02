@@ -327,6 +327,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1879322682}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &194531487 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8269709182575023635, guid: bacd13882a396e042aac203bcc98915f,
+    type: 3}
+  m_PrefabInstance: {fileID: 55892293}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01ccb17078609d469f4876f17860cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!108 &200008328
 Light:
   m_ObjectHideFlags: 0
@@ -1009,6 +1021,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2416064058326588529, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 194531487}
+    - target: {fileID: 2416064058326588529, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: towerHP
+      value: 
+      objectReference: {fileID: 623190571}
     - target: {fileID: 8244815327334105265, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_Name
@@ -1022,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 8244815327334105295, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.008
+      value: -0.61
       objectReference: {fileID: 0}
     - target: {fileID: 8244815327334105295, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
@@ -1646,7 +1668,7 @@ PrefabInstance:
     - target: {fileID: 4345405532256232818, guid: 287313ec64128f748b290b430c5e5e34,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.67
+      value: -8.27
       objectReference: {fileID: 0}
     - target: {fileID: 4345405532256232818, guid: 287313ec64128f748b290b430c5e5e34,
         type: 3}
@@ -1698,12 +1720,6 @@ PrefabInstance:
       propertyPath: towerHP
       value: 
       objectReference: {fileID: 623190571}
-    - target: {fileID: 4345405532256232828, guid: 287313ec64128f748b290b430c5e5e34,
-        type: 3}
-      propertyPath: DamageSound
-      value: 
-      objectReference: {fileID: 5431826982021061926, guid: c425598b4dfdd44b4aa0303ba4a1a6b7,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 287313ec64128f748b290b430c5e5e34, type: 3}
 --- !u!1001 &8845625995794458340
