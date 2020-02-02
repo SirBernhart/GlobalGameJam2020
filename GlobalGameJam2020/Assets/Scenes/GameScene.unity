@@ -1044,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 8244815327334105295, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.08
+      value: -0.61
       objectReference: {fileID: 0}
     - target: {fileID: 8244815327334105295, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
@@ -1668,7 +1668,7 @@ PrefabInstance:
     - target: {fileID: 4345405532256232818, guid: 287313ec64128f748b290b430c5e5e34,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.9
+      value: -8.27
       objectReference: {fileID: 0}
     - target: {fileID: 4345405532256232818, guid: 287313ec64128f748b290b430c5e5e34,
         type: 3}
@@ -1720,12 +1720,6 @@ PrefabInstance:
       propertyPath: towerHP
       value: 
       objectReference: {fileID: 623190571}
-    - target: {fileID: 4345405532256232828, guid: 287313ec64128f748b290b430c5e5e34,
-        type: 3}
-      propertyPath: DamageSound
-      value: 
-      objectReference: {fileID: 5431826982021061926, guid: c425598b4dfdd44b4aa0303ba4a1a6b7,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 287313ec64128f748b290b430c5e5e34, type: 3}
 --- !u!1001 &8845625995794458340
