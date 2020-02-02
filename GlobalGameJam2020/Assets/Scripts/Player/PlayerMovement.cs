@@ -9,6 +9,13 @@ public class PlayerMovement : MonoBehaviour
     public float maxVelocity;
     public Rigidbody2D myRigidbody;
     [SerializeField] private Transform playerGraphics;
+    public ParticleSystem explosao,explosao2;
+
+    void Start()
+    {
+        explosao.emissionRate = 0;
+        explosao2.emissionRate = 0;
+    }
 
     void Update()
     {
@@ -40,8 +47,12 @@ public class PlayerMovement : MonoBehaviour
                 transform.Rotate(Vector2.up, -180);
             }
         }
-      
-        myRigidbody.AddForce(resultingVector);
+        if (Input.GetKeyDown(KeyCode.Space)){
+            explosao.Emit(10);
+            explosao2.Emit(10);
+        }
+
+            myRigidbody.AddForce(resultingVector);
         if(myRigidbody.velocity.magnitude > maxVelocity)
         {
             myRigidbody.velocity*=maxVelocity/myRigidbody.velocity.magnitude;

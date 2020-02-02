@@ -16,7 +16,9 @@ public class DifficultyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //nChunks = 0;
+        dificuldade = 1;
+        velocidade = 0.7f;
     }
 
     // Update is called once per frame

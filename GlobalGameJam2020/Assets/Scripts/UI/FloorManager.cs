@@ -6,16 +6,16 @@ using TMPro;
 public class FloorManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI floorText;
-    private int floor = -1;
+    [SerializeField] private ScoreSO so;
+    
     // Start is called before the first frame update
     private void Start()
     {
-        floorText.text = floor.ToString();
+        floorText.text = so.floor.ToString();
     }
 
-    public void increaseFloor()
+    public void Update()
     {
-        floor+=1;
-        floorText.text = floor.ToString();
+        floorText.text = so.floor.ToString();
     }
 }

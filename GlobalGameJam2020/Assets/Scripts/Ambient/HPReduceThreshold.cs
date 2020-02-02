@@ -11,7 +11,7 @@ public class HPReduceThreshold : MonoBehaviour
     {
         if(collision.gameObject.tag == "damage")
         {
-            DamageSound.Play();
+            //DamageSound.Play();
             //Instantiate(DamageSound, this.transform);
             towerHP.Reduce();
         }
