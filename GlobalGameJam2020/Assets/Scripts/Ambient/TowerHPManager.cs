@@ -15,7 +15,7 @@ public class TowerHPManager : MonoBehaviour
     private Coroutine decreaseHPCoroutine;
     private void Start()
     {
-        decreaseHPCoroutine = StartCoroutine(DecreaseHPOverTime());
+        //decreaseHPCoroutine = StartCoroutine(DecreaseHPOverTime());
     }
 
     [SerializeField] private Image healthBar;
@@ -60,6 +60,6 @@ public class TowerHPManager : MonoBehaviour
 
     private void EndGame()
     {
-        SceneManager.LoadScene("ResultScene");
+        SceneManager.LoadScene("ResultsScene");
     }
 }
