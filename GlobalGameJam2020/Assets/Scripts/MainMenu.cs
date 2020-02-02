@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("GameScene");
     }
 
     public void QuitGame()
@@ -19,6 +19,6 @@ public class MainMenu : MonoBehaviour
     public void Credits()
     {
         Debug.Log("Credits");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene("Credits");
     }
 }

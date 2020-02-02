@@ -21,7 +21,7 @@ public class ResultScene: MonoBehaviour
         {
             currentDisplayScore += 3; // or whatever to get the speed you like
             currentDisplayScore = (int)Mathf.Clamp(currentDisplayScore, 0f, targetScore);
-            field.text = "[x] floors repaired! \n" + currentDisplayScore + " points collected! \n\nBetter luck next time";
+            field.text =  DifficultyManager.nChunks + " floors repaired! \n" + currentDisplayScore + " points collected! \n\nBetter luck next time";
             yield return null;
         }
     }

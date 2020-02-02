@@ -534,7 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   field: {fileID: 155390001}
-  targetScore: 500
+  targetScore: 0
   currentDisplayScore: 0
 --- !u!1 &276265361
 GameObject:
