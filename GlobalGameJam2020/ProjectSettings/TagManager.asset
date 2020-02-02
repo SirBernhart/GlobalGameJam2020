@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - damage
+  - towerSpawn
+  - towerDespawn
   layers:
   - Default
   - TransparentFX
@@ -14,14 +16,14 @@ TagManager:
   - UI
   - 
   - 
+  - Background
+  - Foreground
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Post Processing
   - 
   - 
   - 

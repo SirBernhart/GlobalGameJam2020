@@ -6,14 +6,13 @@ public class ChunkGenerator : MonoBehaviour
 {
     public Transform  parentTransform;
     public int flawsPerSpawn;
-    public GameObject chunk;
-    public SpriteRenderer chunkRenderer;
-    public GameObject flaw;
-    public SpriteRenderer flawRenderer;
+    public GameObject[] towerPieces;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        nextSpawn();
     }
 
     // Update is called once per frame
@@ -22,17 +21,27 @@ public class ChunkGenerator : MonoBehaviour
         
     }
 
-    void spawnChunk(int nflaws)
+    void spawnChunk(GameObject chunk)
+    {
+        Debug.Log("Spawn");
+        DifficultyManager.nChunks += 1;
+        GameObject newChunk = (GameObject)Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
+        if(newChunk != null)
+        {
+            newChunk.GetComponent<TowerDespawn>().generatorRef = this;
+        }
+    }
+
+    public void nextSpawn()
     {
 
-        Instantiate(chunk,parentTransform);
-        Bounds chunkBounds = chunkRenderer.bounds;
-        Bounds flawBounds = flawRenderer.bounds;
-        for(int i=0;i<nflaws; i++)
+        if(DifficultyManager.nChunks<8)/*Os primeiros 8 andares são predeterminados*/
         {
-            float x = Random.Range(chunkBounds.min.x + flawBounds.center.x, chunkBounds.max.x - flawBounds.center.x); 
-            float y = Random.Range(chunkBounds.min.y + flawBounds.center.y, chunkBounds.max.y - flawBounds.center.y);
-            Instantiate(flaw,new Vector3(x,y,0),Quaternion.identity,parentTransform); 
+            spawnChunk(towerPieces[DifficultyManager.nChunks]);
+        }
+        else
+        {
+            spawnChunk(towerPieces[Random.Range(2,towerPieces.Length)]);
         }
     }
 }
