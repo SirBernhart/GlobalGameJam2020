@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5634290900193075946}
   - component: {fileID: 1710411581947297499}
   m_Layer: 8
-  m_Name: Tower Base
+  m_Name: Tower base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2557c1edce62af349b22d42e90cb9417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.7
+  moveSpeed: 0.1666
 --- !u!114 &6007735269149871848
 MonoBehaviour:
   m_ObjectHideFlags: 0

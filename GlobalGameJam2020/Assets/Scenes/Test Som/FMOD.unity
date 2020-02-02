@@ -1165,7 +1165,7 @@ MonoBehaviour:
     Params:
     - Name: EndGame
       Value: 0
-  TriggerEvent: 1
+  TriggerEvent: 11
 --- !u!1 &1234924274
 GameObject:
   m_ObjectHideFlags: 0
