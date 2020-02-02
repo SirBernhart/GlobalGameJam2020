@@ -6,18 +6,14 @@ public class ChunkGenerator : MonoBehaviour
 {
     public Transform  parentTransform;
     public int flawsPerSpawn;
-    public GameObject chunk;
     public GameObject[] towerPieces;
-    //public GameObject flaw;
-    //public Transform leftBound;
-    //public Transform rightBound;
-    //public Transform upperBound;
-    //public Transform lowerBound;
 
+
+    private int floorsSpawned;
     // Start is called before the first frame update
     void Start()
     {
-        spawnChunk();
+        nextSpawn();
     }
 
     // Update is called once per frame
@@ -26,41 +22,28 @@ public class ChunkGenerator : MonoBehaviour
         
     }
 
-    void spawnChunk()
+    void spawnChunk(GameObject chunk)
     {
         Debug.Log("Spawn");
+        floorsSpawned+=1;
         GameObject newChunk = (GameObject)Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
         if(newChunk != null)
         {
             newChunk.GetComponent<TowerDespawn>().generatorRef = this;
-            newChunk.GetComponent<DamageSpawner>().difficulty = 1;
+            newChunk.GetComponent<DamageSpawner>().difficulty = 4;//(Nova classe?)
         }
-        /*
-        Transform lastSpawn = newChunk.GetComponent<Transform>();
-
-
-
-        Bounds chunkBound = newChunk.GetComponent<SpriteRenderer>().bounds;
-
-        float chunkHeight = upperBound.position.y - lowerBound.position.y;
-        float chunkWidth = chunkBound.max.x - chunkBound.min.x;
-
-        if (nflaws > 0)
-        {
-            float segSize = chunkHeight / nflaws;
-            for(int i=0;i<nflaws; i++)
-            {
-                float x = Random.Range(leftBound.position.x,rightBound.position.x); 
-                float y = Random.Range(lowerBound.position.y,lowerBound.position.y + segSize);
-                y+=i * segSize;
-                Instantiate(flaw,new Vector3(x,y,0),Quaternion.identity,lastSpawn); 
-            }
-        }
-        */
     }
 
     public void nextSpawn()
     {
-        spawnChunk();
+
+        if(floorsSpawned<8)/*Os primeiros 8 andares são predeterminados*/
+        {
+            spawnChunk(towerPieces[floorsSpawned]);
+        }
+        else
+        {
+            spawnChunk(towerPieces[Random.Range(0,towerPieces.Length)]);
+        }
     }
 }

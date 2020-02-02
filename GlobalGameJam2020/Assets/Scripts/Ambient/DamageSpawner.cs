@@ -11,11 +11,15 @@ public class DamageSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i=0;i<difficulty;i++)
+        int listLength = damageList.Length;
+        if(listLength>0)
         {
-            int index = Random.Range(0,damageList.Length - 1);
-            if(!damageList[index].active)
-                damageList[index].SetActive(true);
+            for(int i=0;i<difficulty;i++)
+            {
+                int index = Random.Range(0,listLength);
+                if(!damageList[index].active)
+                    damageList[index].SetActive(true);
+            }
         }
     }
 
