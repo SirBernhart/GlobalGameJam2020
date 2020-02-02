@@ -23,6 +23,8 @@ public class TowerHPManager : MonoBehaviour
     public void Increase()
     {
         towerHP += HPToIncrease;
+        if (towerHP >= 100)
+            towerHP = 100;
         UpdateHealthBar();
     }
 
