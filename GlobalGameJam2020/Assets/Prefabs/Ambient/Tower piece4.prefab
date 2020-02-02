@@ -241,6 +241,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2929129186905900302}
     m_Modifications:
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ed6f7238b5ff4b978dffaf25db903ee, type: 3}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: e8dcf5e382b99459e8a658f95ada19d9,
+        type: 2}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557388, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -388,6 +404,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2929129186905900302}
     m_Modifications:
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d71d3140252d45ebaf44e6f7906360e, type: 3}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: e8dcf5e382b99459e8a658f95ada19d9,
+        type: 2}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557388, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -535,6 +567,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2929129186905900302}
     m_Modifications:
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 26c728be843314ab8bea842ace9ad7fb, type: 3}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: e8dcf5e382b99459e8a658f95ada19d9,
+        type: 2}
+    - target: {fileID: 5181805387888195748, guid: d394ed20d124380439b2ecb482d5e467,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5611864583269557388, guid: d394ed20d124380439b2ecb482d5e467,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
