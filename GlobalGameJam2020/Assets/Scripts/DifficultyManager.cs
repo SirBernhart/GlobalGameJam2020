@@ -57,10 +57,10 @@ public class DifficultyManager : MonoBehaviour
         if(nChunks <= 80)
         {
             dificuldade = 5;
-            velocidade = framSize / 4
+            velocidade = frameSize / 4;
         }
         dificuldade = 5;
-        velocidade = frameSize / 3.5;
+        velocidade = frameSize / 3.5f;
         return;
         
     }
