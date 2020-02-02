@@ -6,6 +6,7 @@ public class TowerDespawn : MonoBehaviour
 {
     [HideInInspector]
     public ChunkGenerator generatorRef;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +21,28 @@ public class TowerDespawn : MonoBehaviour
         {
             generatorRef.nextSpawn();
         }
-        if(tag == "towerDespawn" && this.gameObject.name != "Tower base(Clone)")
+        if(tag == "towerDespawn")
         {
-            print("Destroy");
-            Destroy(this.gameObject);
+            if(this.gameObject.name != "Tower base(Clone)")
+            {
+                print("Destroy");
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                StartCoroutine(TowerBaseDestroySentence());
+            }
+        } 
+    }
+
+    private IEnumerator TowerBaseDestroySentence()
+    {
+        while (true)
+        {
+            if(transform.localPosition.y == -400)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
