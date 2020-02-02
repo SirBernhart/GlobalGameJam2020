@@ -8,11 +8,13 @@ public class ChunkGenerator : MonoBehaviour
     public int flawsPerSpawn;
     public GameObject[] towerPieces;
     public ScoreSO Score;
+    //public FloorManager Floor;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        DifficultyManager.nChunks = 0;
         nextSpawn();
     }
 
@@ -27,6 +29,7 @@ public class ChunkGenerator : MonoBehaviour
         Debug.Log("Spawn");
         DifficultyManager.nChunks += 1;
         Score.floor = DifficultyManager.nChunks;
+        //Floor.increaseFloor();
         GameObject newChunk = (GameObject)Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
         if(newChunk != null)
         {

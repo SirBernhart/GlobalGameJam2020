@@ -39,6 +39,7 @@ public class TowerHPManager : MonoBehaviour
 
     private void EndGame()
     {
+        
         SceneManager.LoadScene("ResultsScene");
     }
 }

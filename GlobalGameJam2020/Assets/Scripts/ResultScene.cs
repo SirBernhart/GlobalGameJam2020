@@ -26,10 +26,11 @@ public class ResultScene: MonoBehaviour
             currentDisplayFloor = (int)Mathf.Clamp(currentDisplayScore, 0f, result.score);
             currentDisplayScore += 3; // or whatever to get the speed you like
             currentDisplayScore = (int)Mathf.Clamp(currentDisplayScore, 0f, result.score);
-            field.text =  result.floor + " floors repaired! \n" + currentDisplayScore + " points collected! \n\nBetter luck next time";
+            field.text =  result.floor.ToString() + " floors repaired! \n" + currentDisplayScore.ToString() + " points collected! \n\nBetter luck next time";
+            
             yield return null;
-    
         }
+        
     }
  
 }

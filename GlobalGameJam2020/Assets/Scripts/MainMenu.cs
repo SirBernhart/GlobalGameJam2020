@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private ScoreSO so;
     public void PlayGame()
     {
         Debug.Log("Play");
+        so.floor = 0;
         SceneManager.LoadScene("GameScene");
     }
 
