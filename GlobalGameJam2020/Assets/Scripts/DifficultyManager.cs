@@ -46,58 +46,58 @@ public class DifficultyManager : MonoBehaviour
             velocidade = frameSize / 5;
             return;
         }
-        if (nChunks <= 9)
+        if (nChunks <= 10)
         {
             dificuldade = 3;
-            velocidade = frameSize / 4.5f;
-            return;
-        }
-        if (nChunks <= 11)
-        {
-            dificuldade = 4;
             velocidade = frameSize / 4.5f;
             return;
         }
         if (nChunks <= 13)
         {
             dificuldade = 4;
+            velocidade = frameSize / 4.5f;
+            return;
+        }
+        if (nChunks <= 16)
+        {
+            dificuldade = 4;
             velocidade = frameSize / 4;
             return;
         }
-        if (nChunks <= 15)
+        if (nChunks <= 18)
         {
             dificuldade = 5;
             velocidade = frameSize / 4;
             return;
         }
         // Médio
-        if (nChunks <= 18)
+        if (nChunks <= 28)
         {
             dificuldade = 5;
             velocidade = frameSize / 3.5f;
             return;
         }
-        if (nChunks <= 21)
+        if (nChunks <= 33)
         {
             dificuldade = 6;
             velocidade = frameSize / 3.5f;
             return;
         }
         // Difícil
-        if (nChunks <= 25)
+        if (nChunks <= 39)
         {
             dificuldade = 6;
             velocidade = frameSize / 3f;
             return;
         }
-        if (nChunks <= 30)
+        if (nChunks <= 45)
         {
             dificuldade = 7;
             velocidade = frameSize / 3f;
             return;
         }
         // Duro de matar / Inferno / Elite / Somente os brabo
-        if (nChunks <= 35)
+        if (nChunks <= 60)
         {
             dificuldade = 7;
             velocidade = frameSize / 2.5f;
