@@ -9,6 +9,7 @@ public class RepairController : MonoBehaviour
     [SerializeField] private ScoreManager scoreManager;
     [SerializeField] private TowerHPManager towerHP;
     public ScoreSO Score;
+    public ScreenShake screenShake;
 
     private int repairAmount = 1;
     public AudioSource Boom;
@@ -40,6 +41,7 @@ public class RepairController : MonoBehaviour
                 // ReduceDamage returns true if the player was able to repair it
                 if (collider.gameObject.GetComponent<Damage>().ReduceDamage(repairAmount))
                 {
+                    screenShake.Shake();
                     towerHP.Increase();
                     scoreManager.IncreaseScore(repairScoreReward, towerHP.towerHP);
                     Score.score = scoreManager.score;
