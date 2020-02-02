@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform playerGraphics;
     public ParticleSystem explosao,explosao2;
     public AudioSource puff1, puff2;
+    private Vector3 target;
 
     void Start()
     {
@@ -35,18 +36,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxis("Horizontal")>0)
         {
             resultingVector+=(forceUnit*right);
-            if(transform.rotation.y != 1)
-            {
-                transform.Rotate(Vector2.up, 180);
-            }
         }
         if (Input.GetAxis("Horizontal")<0)
         {
             resultingVector+=(-1*forceUnit*right);
-            if (transform.rotation.y != 0)
-            {
-                transform.Rotate(Vector2.up, -180);
-            }
         }
         if (Input.GetKeyDown(KeyCode.Space)){
             puff1.Play();
@@ -55,10 +48,57 @@ public class PlayerMovement : MonoBehaviour
             explosao2.Emit(10);
         }
 
-            myRigidbody.AddForce(resultingVector);
+        DetermineRotation(resultingVector);
+
+        myRigidbody.AddForce(resultingVector);
         if(myRigidbody.velocity.magnitude > maxVelocity)
         {
             myRigidbody.velocity*=maxVelocity/myRigidbody.velocity.magnitude;
+        }
+    }
+
+    private void DetermineRotation(Vector3 resultingVector)
+    {
+        if(resultingVector.x < 0)
+        {
+            if(resultingVector.y > 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, 0, -45));
+            }
+            else if (resultingVector.y < 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, 0, 45));
+            }
+            else if(resultingVector.y == 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            }
+        }
+        else if(resultingVector.x > 0)
+        {
+            if (resultingVector.y > 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, 180, -45));
+            }
+            else if (resultingVector.y < 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, 180, 45));
+            }
+            else if (resultingVector.y == 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+            }
+        }
+        else if (resultingVector.x == 0)
+        {
+            if (resultingVector.y > 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.y, -90));
+            }
+            else if (resultingVector.y < 0)
+            {
+                transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.y, 90));
+            }
         }
     }
 }
