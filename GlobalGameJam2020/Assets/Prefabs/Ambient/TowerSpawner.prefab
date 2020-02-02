@@ -45,7 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentTransform: {fileID: 2042414469535784447}
   flawsPerSpawn: 3
-  chunk: {fileID: 2929129186905900289, guid: 46de71890619ae74b91313f9bad63746, type: 3}
   towerPieces:
   - {fileID: 2929129186905900289, guid: 434656dc880114cdd919207ab3040c95, type: 3}
   - {fileID: 2929129186905900289, guid: e7ccdb4acac244fefb4b228ab84f1e25, type: 3}
@@ -55,3 +54,4 @@ MonoBehaviour:
   - {fileID: 2929129186905900289, guid: bc26eff5f47064f00bf69f5738b97a94, type: 3}
   - {fileID: 2929129186905900289, guid: ea0ce155ef362438ca54a4cca49c9e5d, type: 3}
   - {fileID: 2929129186905900289, guid: 14c7fcbd136644a7aaf8ab03ba74d332, type: 3}
+  Score: {fileID: 11400000, guid: 176bb21bf835e4ba7b7f243b020c87c6, type: 2}
