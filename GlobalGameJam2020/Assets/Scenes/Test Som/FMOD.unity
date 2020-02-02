@@ -1061,8 +1061,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   highHPMultiplier: 2
-  fmodEvent: event:/BGM/MusicBehavior
-  MusicVar: 2
 --- !u!1 &1076368817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1165,7 @@ MonoBehaviour:
     Params:
     - Name: EndGame
       Value: 0
-  TriggerEvent: 0
+  TriggerEvent: 1
 --- !u!1 &1234924274
 GameObject:
   m_ObjectHideFlags: 0
