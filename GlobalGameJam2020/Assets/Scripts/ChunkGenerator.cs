@@ -9,7 +9,6 @@ public class ChunkGenerator : MonoBehaviour
     public GameObject[] towerPieces;
 
 
-    private int floorsSpawned;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,25 +24,24 @@ public class ChunkGenerator : MonoBehaviour
     void spawnChunk(GameObject chunk)
     {
         Debug.Log("Spawn");
-        floorsSpawned+=1;
+        DifficultyManager.nChunks += 1;
         GameObject newChunk = (GameObject)Instantiate(chunk,parentTransform.position,Quaternion.identity,parentTransform);
         if(newChunk != null)
         {
             newChunk.GetComponent<TowerDespawn>().generatorRef = this;
-            newChunk.GetComponent<DamageSpawner>().difficulty = 4;//(Nova classe?)
         }
     }
 
     public void nextSpawn()
     {
 
-        if(floorsSpawned<8)/*Os primeiros 8 andares são predeterminados*/
+        if(DifficultyManager.nChunks<8)/*Os primeiros 8 andares são predeterminados*/
         {
-            spawnChunk(towerPieces[floorsSpawned]);
+            spawnChunk(towerPieces[DifficultyManager.nChunks]);
         }
         else
         {
-            spawnChunk(towerPieces[Random.Range(0,towerPieces.Length)]);
+            spawnChunk(towerPieces[Random.Range(1,towerPieces.Length)]);
         }
     }
 }
