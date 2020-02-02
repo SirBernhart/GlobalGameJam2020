@@ -9658,8 +9658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6318098761e247f2ba987db1a107f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceUnit: 2
-  maxVelocity: 20
+  forceUnit: 45
+  maxVelocity: 40
   myRigidbody: {fileID: 55140577499352794}
 --- !u!50 &55140577499352794
 Rigidbody2D:
