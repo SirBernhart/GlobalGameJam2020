@@ -987,6 +987,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 55140577499352794, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 562772352872259211, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: forceUnit
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 562772352872259211, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: maxVelocity
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 2416064058326588529, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: scoreManager
@@ -1154,7 +1169,7 @@ Transform:
   m_Children:
   - {fileID: 2004653390}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434755728
 GameObject:
@@ -1301,7 +1316,7 @@ Transform:
   - {fileID: 970607948}
   - {fileID: 2107742614}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1863405030
 GameObject:

@@ -14413,8 +14413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6318098761e247f2ba987db1a107f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceUnit: 45
-  maxVelocity: 40
+  forceUnit: 25
+  maxVelocity: 30
   myRigidbody: {fileID: 55140577499352794}
   playerGraphics: {fileID: 5468144667517413554}
 --- !u!50 &55140577499352794
