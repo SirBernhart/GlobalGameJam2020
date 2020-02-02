@@ -15,7 +15,6 @@ public class TowerDespawn : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //print(other.name);
         string tag = other.gameObject.tag;
         if(tag == "towerSpawn")
         {
@@ -28,21 +27,14 @@ public class TowerDespawn : MonoBehaviour
                 print("Destroy");
                 Destroy(this.gameObject);
             }
-            else
-            {
-                StartCoroutine(TowerBaseDestroySentence());
-            }
-        } 
+        }
     }
 
-    private IEnumerator TowerBaseDestroySentence()
+    private void Update()
     {
-        while (true)
+        if(transform.position.y < -400)
         {
-            if(transform.localPosition.y == -400)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 }
