@@ -20,29 +20,34 @@ public class DifficultyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(nChunks <= 7)
+        if(nChunks <= 4)
         {
             dificuldade = 1;
             velocidade = frameSize / 6;
             return;
         }
-        if(nChunks <= 15)
+        if(nChunks <= 9)
         {
             dificuldade = 2;
             velocidade = frameSize / 5;
             return;
         }
-        if(nChunks <= 23)
+        if(nChunks <= 16)
         {
             dificuldade = 3;
             velocidade = frameSize / 5;
             return;
         }
-        if(nChunks <= 43)
+        if(nChunks <= 26)
         {
             dificuldade = 4;
-            velocidade = frameSize / 4;
+            velocidade = frameSize / 4,5f;
             return;
+        }
+        if(nChunks <= 51)
+        {
+            dificuldade 4;
+            velocidade = frameSize / 4;
         }
         dificuldade = 5;
         velocidade = frameSize / 3;
