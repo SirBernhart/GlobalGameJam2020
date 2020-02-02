@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D myRigidbody;
     [SerializeField] private Transform playerGraphics;
     public ParticleSystem explosao,explosao2;
+    public AudioSource puff1, puff2;
 
     void Start()
     {
@@ -48,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         if (Input.GetKeyDown(KeyCode.Space)){
+            puff1.Play();
+            puff2.Play();
             explosao.Emit(10);
             explosao2.Emit(10);
         }
