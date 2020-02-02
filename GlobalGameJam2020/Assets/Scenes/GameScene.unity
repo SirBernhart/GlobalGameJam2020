@@ -566,31 +566,6 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1255462624}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &458770287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8845625995909335957, guid: 92ab0b5352dba05469cb9f0a439e3375,
-    type: 3}
-  m_PrefabInstance: {fileID: 8845625995794458340}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &458770292
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458770287}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f925a3eee91434490968970c76f1bf16, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &497005860
 GameObject:
   m_ObjectHideFlags: 3
@@ -832,6 +807,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorCounter: {fileID: 2066241800}
+--- !u!114 &700808576 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1355258961988108083, guid: 92ab0b5352dba05469cb9f0a439e3375,
+    type: 3}
+  m_PrefabInstance: {fileID: 8845625995794458340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2889f6b7849b8ce47be28e87819eeb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,6 +1830,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 176bb21bf835e4ba7b7f243b020c87c6,
         type: 2}
+    - target: {fileID: 2416064058326588529, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: screenShake
+      value: 
+      objectReference: {fileID: 700808576}
     - target: {fileID: 3557317608481176003, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_Name
@@ -2812,7 +2804,7 @@ PrefabInstance:
         type: 3}
       propertyPath: CameraShake
       value: 
-      objectReference: {fileID: 458770292}
+      objectReference: {fileID: 0}
     - target: {fileID: 4345405534326226150, guid: 287313ec64128f748b290b430c5e5e34,
         type: 3}
       propertyPath: OutputAudioMixerGroup
