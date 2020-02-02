@@ -852,7 +852,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352902326
 GameObject:
@@ -948,7 +948,7 @@ RectTransform:
   - {fileID: 1063467264}
   - {fileID: 276265362}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1110,6 +1110,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467900651}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 --- !u!1001 &1651597495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1184,6 +1185,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ede768c51c76846c587ffe85d7d44be8, type: 3}
+=======
+>>>>>>> parent of ab05b1f... Cursor e organização
 --- !u!1 &2060245677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,5 +1277,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
