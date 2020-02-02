@@ -31,6 +31,7 @@ public class RepairController : MonoBehaviour
             if(collider.tag == "damage")
             {
                 Boom.Play();
+                this.GetComponent<RandomizerVocal>().Fanfare();
                 // ReduceDamage returns true if the player was able to repair it
                 if (collider.gameObject.GetComponent<Damage>().ReduceDamage(repairAmount))
                 {

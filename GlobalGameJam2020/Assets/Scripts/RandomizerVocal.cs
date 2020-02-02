@@ -15,17 +15,18 @@ public class RandomizerVocal : MonoBehaviour
 
 
     // Start is called before the first frame update
-     public void OnEnable() {
+     /*public void OnEnable() {
 
         randomSound.clip = Frases[Random.Range(0, Frases.Length)];
         randomSound.Play ();
         // CallAudio ();
     }
+*/
 
+public void Fanfare ()
+{
+   randomSound.clip = Frases[Random.Range(0, Frases.Length)];
+   randomSound.Play ();
+}
 
-
-       public void RandomSoundness()
-     {
-
-     }
 }
