@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1198,6 +1198,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234924274}
   m_CullTransparentMesh: 0
+--- !u!50 &1314817392 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 55140577499352794, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1536856478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1484484524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1284,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1076368818}
     m_Modifications:
+    - target: {fileID: 562772352872259211, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
+        type: 3}
+      propertyPath: myRigidbody
+      value: 
+      objectReference: {fileID: 1314817392}
     - target: {fileID: 1226695430803476562, guid: 4a707e6290dc51a4eb590a4fa77e6d67,
         type: 3}
       propertyPath: m_Layer
