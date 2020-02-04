@@ -28,6 +28,11 @@ public class RepairController : MonoBehaviour
         }
     }
 
+    public void TouchRepair()
+    {
+        DoRepair();
+    }
+
     private void DoRepair()
     {
         List<Collider2D> collidedWith = new List<Collider2D>();

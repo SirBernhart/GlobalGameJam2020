@@ -24112,6 +24112,7 @@ GameObject:
   - component: {fileID: 562772352872259211}
   - component: {fileID: 55140577499352794}
   - component: {fileID: 3889554234520008372}
+  - component: {fileID: 1698528022322090277}
   m_Layer: 9
   m_Name: Player Character
   m_TagString: Untagged
@@ -24195,6 +24196,26 @@ CircleCollider2D:
   m_Offset: {x: 0.029044848, y: -0.07264092}
   serializedVersion: 2
   m_Radius: 0.23146532
+--- !u!114 &1698528022322090277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8244815327334105265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434d95d936204cf0a28f4445b0245d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceUnit: 30
+  maxVelocity: 45
+  myRigidbody: {fileID: 55140577499352794}
+  playerGraphics: {fileID: 5468144667517413554}
+  explosao: {fileID: 7609702207891926178}
+  explosao2: {fileID: 7792138229467510943}
+  puff1: {fileID: 603798910847479159}
+  puff2: {fileID: 5464480048465394346}
 --- !u!1 &8558386216290426227
 GameObject:
   m_ObjectHideFlags: 0
